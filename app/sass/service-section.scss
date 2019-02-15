@@ -1,0 +1,58 @@
+.service-section {
+  background-color: $color-White-Smoke;
+  padding: 99px 0 101px 0;
+  &__list {
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 583px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__item {
+    max-width: 255px;
+    width: 100%;
+
+    @media (max-width: 583px) {
+      margin: 0 auto;
+    }
+
+  }
+  &__title {
+    text-align: center;
+    color: #29323c;
+    font: 700 16px $font-Montserrat;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  &__text {
+    color: #29323c;
+    font: 400 14px $font-OpenSans;
+    text-align: center;
+
+    @media (max-width: 583px) {
+      margin-bottom: 15px;
+    }
+  }
+  &__img {
+    max-width: 120px;
+    height: 120px;
+    border-radius: 2px;
+    margin: 0 auto 39px;
+  }
+  &__img-computer {
+    background: url("../img/service__img-1.png") no-repeat center/cover;
+  }
+  &__img-customize {
+    background: url("../img/service__img-2.png") no-repeat center/cover;
+  }
+  &__img-ready {
+    background: url("../img/service__img-3.png") no-repeat center/cover;
+  }
+  &__img-love {
+    background: url("../img/service__img-4.png") no-repeat center/cover;
+  }
+}

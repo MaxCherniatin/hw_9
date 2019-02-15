@@ -1,0 +1,54 @@
+.works-section {
+  padding-top: 100px;
+  &__list {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    max-width: 320px;
+    width: 100%;
+    display: block;
+    position: relative;
+    img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+    }
+    &:hover {
+      opacity: .9;
+    }
+  }
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: rgba(0,0,0, 0.7);
+  &:hover {
+    opacity: .9;
+  }
+}
+.content {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 28px;
+  &__title {
+    color: $color-gray;
+    font: 200 15px $font-Montserrat;
+  }
+  &__description {
+    color: $color-gray;
+    font: 400 13px $font-Montserrat;
+  }
+}

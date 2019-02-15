@@ -1,0 +1,101 @@
+.team-section {
+  background: url("../img/team__img.png") no-repeat center/cover;
+  padding: 100px 0 113px;
+  &__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 93px;
+  }
+  &__item {
+    max-width: 270px;
+    width: 100%;
+    display: block;
+    position: relative;
+
+    @media (max-width: 583px) {
+      margin: 0 auto;
+    }
+  }
+  &__photo {
+    max-width: 270px;
+    img {
+      max-width: 100%;
+    }
+  }
+  &__block {
+    background-color: $color-gray;
+    opacity: 0.75;
+    text-align: center;
+    padding: 31px 0 31px;
+    @media (max-width: 583px) {
+      margin-bottom: 15px;
+    }
+  }
+  &__title {
+    color: #29323c;
+    font: 700 15px/20px $font-Montserrat;
+    margin-bottom: 7px;
+  }
+  &__description {
+    color: $color-hex;
+    font: 400 14px/20px $font-Montserrat;
+    margin-bottom: 23px;
+  }
+  &__social {
+    text-decoration: none;
+    .fa-twitter,
+    .fa-linkedin,
+    .fa-vimeo,
+    .fa-dribbble,
+    .fa-envelope {
+      border-radius: 100%;
+      background-color: black;
+      padding: 7px 7px;
+      color: $color-gray;
+      &:hover {
+        color: cornflowerblue;
+      }
+    }
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+  }
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: rgba(0,0,0, 0.7);
+  &:hover {
+    opacity: .9;
+  }
+}
+.content {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 28px;
+  text-align: center;
+  &__title {
+    color: $color-gray91;
+    font: 700 13px $font-Montserrat;
+    margin: 15px 0;
+  }
+  &__border {
+    max-width: 40px;
+    border: 1px solid $color-gray;
+    margin: 0 auto;
+  }
+}

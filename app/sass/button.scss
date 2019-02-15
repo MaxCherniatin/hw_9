@@ -1,0 +1,28 @@
+.button {
+  display: inline-block;
+  padding: 10px 25px;
+  color: $color-gray;
+  text-decoration: none;
+  border: 1px solid $color-gray;
+  border-radius: 100px;
+  transition: 0.3s;
+  font: 700 13px $font-Montserrat;
+  font-weight: bold;
+  text-transform: uppercase;
+  &:hover {
+    color: #0b0b0b;
+    background-color: $color-gray;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  &__arrow {
+    margin: 144px  auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-size: 35px;
+    max-width: 50px;
+    min-height: 50px;
+  }
+}

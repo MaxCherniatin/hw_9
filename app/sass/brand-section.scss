@@ -1,0 +1,14 @@
+.brand-section {
+  background-color: $color-White-Smoke;
+  padding: 43px 0 ;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__item {
+    text-align: center;
+    margin: 3%;
+  }
+}

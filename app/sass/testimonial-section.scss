@@ -1,0 +1,29 @@
+.testimonial-section {
+  padding: 100px 0;
+  &__slider {
+    max-width: 1170px;
+    margin: auto;
+    text-align: center;
+  }
+  &__description {
+    color: $color;
+    font: 400 16px/26px $font-OpenSans;
+    margin-bottom: 22px;
+  }
+  &__bracket {
+    color: $color;
+    font: 700 40px/26px $font-Montserrat;
+    font-style: italic;
+    margin-bottom: 32px;
+  }
+  &__title {
+    color: $color-hex;
+    font: 700 15px/20px $font-Montserrat;
+    margin: 13px 0 5px;
+  }
+  &__text {
+    color: $color-hex;
+    font: 400 13px/20px $font-Montserrat;
+    margin-bottom: 33px;
+  }
+}
